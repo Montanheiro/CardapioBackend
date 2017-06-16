@@ -27,7 +27,7 @@ module.exports = {
                 logger.debug('[Tags Controller]', 'URL de tags recuperada');
                 res.status(200).json({
                     success: true,
-                    url: company.tags,
+                    url: company.tags
 					//qrCode: `${amazonConfig.baseURL}/${amazonConfig.qrCodeBucket}/${req.companyID}_qrCode.png`
                 });
             })
@@ -35,7 +35,7 @@ module.exports = {
                 logger.error('[Tags Controller]', 'Erro ao recuperar URL de Tags', err.errmsg);
                 res.status(500).json({
                     success: false,
-                    msg: 'Erro ao recuerar etiquetas. Tente novamente!',
+                    msg: 'Erro ao recuperar etiquetas. Tente novamente!',
 					err: err.errmsg
                 });
             })
