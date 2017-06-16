@@ -27,7 +27,7 @@ module.exports = {
                 logger.debug('[Tags Controller]', 'URL de tags recuperada');
                 res.status(200).json({
                     success: true,
-                    url: company.tags
+                    url: "http://google.com"
 					//qrCode: `${amazonConfig.baseURL}/${amazonConfig.qrCodeBucket}/${req.companyID}_qrCode.png`
                 });
             })
